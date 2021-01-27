@@ -13,4 +13,6 @@ This engine should be able to process orders with the following rules
 ## Design
 This is a sample java app, the project is setup to compile classes with Maven. Unit tests can be run using mvn test which asserts that all tests run successfully.
 The design is as follows.
-There is a generic Product class. Specific products inherit from that product class. The products all override the default `orderAction` method with actions appropriate for the individual product.
+There is a generic Product class. Specific products inherit from that product class. The products all override the default `orderAction` method with actions appropriate for the individual product as described above.
+
+Unit tests assert that the rules are followed.
