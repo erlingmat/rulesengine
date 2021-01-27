@@ -40,6 +40,14 @@ public class AppTest
 	String actionList = thisMembership.orderAction();
 	assertEquals(actionList, "MembershipActivationAction, MembershipActivationEmail");
     }
+
+    @Test
+    public void MembershipUpgradeShouldUpgradeAndSendEmail() {
+	MembershipUpgrade thisMembershipUpgrade = new MembershipUpgrade();
+	String actionList = thisMembershipUpgrade.orderAction();
+	assertEquals(actionList, "MembershipUpgradeAction, MembershipUpgradeEmail");
+    }
+    
     @Test
     public void shouldAnswerWithTrue()
     {
