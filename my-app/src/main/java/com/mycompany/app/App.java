@@ -6,16 +6,21 @@ import com.mycompany.product.*;
  */
 public class App 
 {
+    
     public static void main( String[] args )
     {
-        System.out.println( "Hello World!" );
+	Book myBook = new Book();
+	
+	System.out.println( "Hello World!" );
     }
 
     public String GeneratePackingSlip(Product product){
 
+	return "";
     }
     public String GenerateRoyaltyPackingSlip(Product product) {
 
+	return "";
     }
     
     public void ActivateMembership() {
