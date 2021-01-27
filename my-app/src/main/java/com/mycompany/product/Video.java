@@ -2,12 +2,12 @@ package com.mycompany.product;
 import com.mycompany.product.Product;
 
 public class Video extends Product{
-    private String title = "The best movie";
+    public String title = "The best movie";
     @Override
     public String orderAction(){
-	String action = "PackingslipAction, RoyaltyOrderAction";
+	String action = "PackingslipAction";
 	if (this.title == "Learning to Ski") {
-	    action += "PackingFirstAid";
+	    action += ", PackingFirstAid";
 	}
 	return action;
     }
